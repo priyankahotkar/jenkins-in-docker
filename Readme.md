@@ -28,6 +28,7 @@ docker run -d `
   --name jenkins `
   --restart=on-failure `
   -p 8080:8080 -p 50000:50000 `
+  --network jenkins `
   -v "C:/Users/PRIYANKA/jenkins_home:/var/jenkins_home" `
   -v "//var/run/docker.sock:/var/run/docker.sock" `
   -v "C:/Program Files/Docker/Docker/resources/bin/docker.exe:/usr/bin/docker" `
